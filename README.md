@@ -1,3 +1,5 @@
+*** Now using "app" directory from Next.js 13 ***
+
 # My Portfolio
 
 ## Tech Stack
