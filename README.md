@@ -1,4 +1,4 @@
-*** Now using "app" directory from Next.js 13 ***
+**Now using "app" directory from Next.js 13**
 
 # My Portfolio
 
