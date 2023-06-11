@@ -37,7 +37,7 @@ const Page = async () => {
               key={index}
               name={p.name}
               desc={p.desc}
-              logo={urlForImage(p.logo).url()}
+              logo={p.logo ? urlForImage(p.logo).url() : null}
               url={p.url ? p.url : null}
               github_url={p.github_url ? p.github_url : null}
               doc_url={p.doc_url ? p.doc_url : null}
