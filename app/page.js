@@ -45,7 +45,7 @@ const Home = async () => {
                   className="text-gray-600 dark:text-gray-400"
                 />
                 <p className="ml-1 text-gray-600 dark:text-gray-400 text-sm">
-                  Gwalior, Madhya Pradesh, India
+                  Chennai, Tamil Nadu, India
                 </p>
               </div>
 
