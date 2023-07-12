@@ -183,7 +183,7 @@ const Home = async () => {
           <div className="flex items-center justify-center mt-3 mb-16 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6">
             <p className="text-sm">Resume</p>
             <Link
-              href="https://drive.google.com/file/d/1tnIbMBPrvJI1TN23x6Gkc_iQzcZ5W89y/view?usp=sharing"
+              href="https://drive.google.com/drive/folders/167F2LSfuEwrN3rEMzVGi2B8N2CV1Xt_Z?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >

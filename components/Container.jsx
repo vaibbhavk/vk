@@ -1,6 +1,6 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import NextLink from "next/link";
 import cn from "classnames";
 import MobileMenu from "./MobileMenu";
@@ -9,8 +9,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 function NavItem({ href, text, target }) {
-  const router = useRouter();
-  const isActive = router.asPath === href;
+  const pathname = usePathname();
+  const isActive = pathname === href;
 
   return (
     <NextLink
@@ -29,7 +29,6 @@ function NavItem({ href, text, target }) {
 }
 
 export default function Container({ children }) {
-
   return (
     <div className="bg-gray-50 dark:bg-gray-900">
       <div className="flex flex-col justify-center px-5">
@@ -56,7 +55,7 @@ export default function Container({ children }) {
             <NavItem href="/projects" text="Projects" />
             {/* <NavItem href="/services" text="Services" /> */}
             <NavItem
-              href="https://drive.google.com/file/d/1tnIbMBPrvJI1TN23x6Gkc_iQzcZ5W89y/view?usp=sharing"
+              href="https://drive.google.com/drive/folders/167F2LSfuEwrN3rEMzVGi2B8N2CV1Xt_Z?usp=sharing"
               target="_black"
               text="Resume"
             />
