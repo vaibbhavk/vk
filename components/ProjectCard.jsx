@@ -15,8 +15,8 @@ export default function ProjectCard({
   gradient,
 }) {
   return (
-    <div className={cn("", "rounded-lg bg-gradient-to-r p-1", gradient)}>
-      <div className="w-full h-full bg-white rounded-lg p-2">
+    <div className={cn("", "rounded-lg bg-gradient-to-r p-1 mt-4", gradient)}>
+      <div className="w-full h-full bg-white rounded-lg p-4">
         {logo && (
           <div className="relative w-full h-[230px] hidden sm:block">
             <Image
