@@ -14,13 +14,13 @@
 ```cmd
 git clone https://github.com/vaibbhavk/my-portfolio.git
 cd my-portfolio
-yarn
-yarn run dev
+npm install
+npm run dev
 ```
 
 Create a `.env` file similar to [`.env.example`](https://github.com/vaibbhavk/my-portfolio/blob/main/.env.example).
 
-Note: Not using Github API for now.
+Note: Not using GitHub API for now.
 
 Sanity code: https://github.com/vaibbhavk/vaibhav-kesharwani-sanity
 
