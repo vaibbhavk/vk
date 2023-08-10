@@ -29,7 +29,7 @@ const Home = async () => {
                 Vaibhav Kesharwani
               </h1>
 
-              <div className="flex items-center mb-1">
+              {/* <div className="flex items-center mb-1">
                 <MdEmail
                   size="1em"
                   className="text-gray-600 dark:text-gray-400"
@@ -38,7 +38,7 @@ const Home = async () => {
                 <p className="ml-1 text-gray-600 dark:text-gray-400 text-sm">
                   vaibhav.vk2128@gmail.com
                 </p>
-              </div>
+              </div> */}
               <div className="flex items-center mb-4">
                 <MdLocationPin
                   size="1em"
@@ -50,8 +50,7 @@ const Home = async () => {
               </div>
 
               <p className="text-gray-600 dark:text-gray-400 mb-16">
-                Computer Science Student | Data Scientist | Web
-                Developer | Android Developer | Freelancer | Web, Graphics, and Motion Designer
+                Founder at GigPlaced | Data Scientist | Full Stack Developer | Android Developer | Freelancer | Web, Graphics, and Motion Designer
               </p>
             </div>
             <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
