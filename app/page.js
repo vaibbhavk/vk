@@ -14,6 +14,7 @@ import { MdLocationPin, MdOutlinePictureAsPdf, MdEmail } from "react-icons/md";
 import EducationCard from "../components/EducationCard";
 import ExperienceCard from "../components/ExperienceCard";
 import { getEducations, getExperiences } from "@/lib/sanity-utils";
+import BusinessCard from "@/components/BusinessCard";
 
 const Home = async () => {
   const educations = await getEducations();
@@ -50,7 +51,9 @@ const Home = async () => {
               </div>
 
               <p className="text-gray-600 dark:text-gray-400 mb-16">
-                Founder at GigPlaced | Data Scientist | Full Stack Developer | Android Developer | Freelancer | Web, Graphics, and Motion Designer
+                Founder at GigPlaced | Data Scientist | Full Stack Developer |
+                Android Developer | Freelancer | Web, Graphics, and Motion
+                Designer
               </p>
             </div>
             <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
@@ -192,6 +195,13 @@ const Home = async () => {
               />
             </Link>
           </div>
+
+          {/* <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
+            GigPlaced
+          </h3>
+          <div className="group grid w-full grid-cols-1 gap-4 sm:grid-cols-1 items-start mb-16">
+            <BusinessCard />
+          </div> */}
 
           <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
             Education

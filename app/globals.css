@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 ::selection {
   background-color: #47a3f3;
   color: #fefefe;
@@ -213,4 +215,15 @@ table {
 
 .prose .callout > p {
   margin: 0 !important;
+}
+
+
+/* ============ flip hover styles ============ */
+.card:hover {
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+
+.card-back {
+  transform: rotateY(180deg);
 }

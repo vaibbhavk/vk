@@ -31,7 +31,7 @@ const Page = async () => {
           Management.
         </p>
 
-        <div className="grid gap-4 w-full">
+        <div className="grid gap-4 w-full grid-cols-1">
           {projects.map((p, index) => (
             <ProjectCard
               key={index}

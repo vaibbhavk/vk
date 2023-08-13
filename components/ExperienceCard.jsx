@@ -45,14 +45,16 @@ export default function ExperienceCard({
           ))}
       </ul>
 
-      <ul className="flex flex-wrap mb-2 grow">
-        <li className="text-sm font-semibold mr-3">Skills:</li>
-        {tech.map((t, index) => (
-          <li key={index} className="mr-3 text-sm rounded-lg text-gray-400">
-            {t}
-          </li>
-        ))}
-      </ul>
+      {tech && (
+        <ul className="flex flex-wrap mb-2 grow">
+          <li className="text-sm font-semibold mr-3">Skills:</li>
+          {tech.map((t, index) => (
+            <li key={index} className="mr-3 text-sm rounded-lg text-gray-400">
+              {t}
+            </li>
+          ))}
+        </ul>
+      )}
 
       <p className="text-sm text-right text-gray-900 dark:text-gray-100">
         {date}
