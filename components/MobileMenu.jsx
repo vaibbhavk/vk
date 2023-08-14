@@ -80,7 +80,7 @@ export default function MobileMenu() {
             style={{ transitionDelay: "250ms" }}
           >
             <Link
-              href="https://drive.google.com/file/d/1tnIbMBPrvJI1TN23x6Gkc_iQzcZ5W89y/view?usp=sharing"
+              href="https://drive.google.com/drive/folders/167F2LSfuEwrN3rEMzVGi2B8N2CV1Xt_Z?usp=sharing"
               className="flex w-auto pb-4"
               target="_blank"
             >
