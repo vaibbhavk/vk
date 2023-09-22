@@ -51,7 +51,7 @@ const Home = async () => {
               </div>
 
               <p className="text-gray-600 dark:text-gray-400 mb-16">
-                Founder at GigPlaced | Data Scientist | Full Stack Developer |
+                Founder at DatStek | Data Scientist | Full Stack Developer |
                 Android Developer | Freelancer | Web, Graphics, and Motion
                 Designer
               </p>
@@ -73,6 +73,18 @@ const Home = async () => {
             Links
           </h3>
           <div className="flex">
+            <a
+              href="https://datstek.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition ease-in-out hover:-translate-y-1 hover:scale-110 mr-6"
+            >
+              <img
+                src="/datstek.png"
+                alt="datstek"
+                className="h-[2em] w-[2em]"
+              />
+            </a>
             <a href="mailto:vaibhav.vk2128@gmail.com">
               <SiGmail
                 className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
