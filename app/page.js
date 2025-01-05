@@ -131,7 +131,7 @@ const Home = async () => {
               />
             </a>{" "}
             <a
-              href="https://www.instagram.com/vk_2128/"
+              href="https://www.instagram.com/vaibbhavk/"
               target="_blank"
               rel="noopener noreferrer"
               className="mr-6"
