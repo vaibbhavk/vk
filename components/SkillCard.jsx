@@ -1,19 +1,8 @@
-"use client";
-
 import Link from "next/link";
-import Image from "next/image";
 
-export default function SkillCard({ title, projects, logo }) {
+export default function SkillCard({ title, projects }) {
   return (
     <div className="border border-grey-200 dark:border-gray-800 rounded p-4 w-full bg-white dark:bg-gray-900">
-      <Image
-        alt={title}
-        height={32}
-        width={32}
-        src={logo}
-        className="rounded-full"
-        style={{ width: "2rem", height: "2rem" }}
-      />
       <h3 className="text-lg font-bold text-left my-2 text-gray-900 dark:text-gray-100">
         {title}
       </h3>

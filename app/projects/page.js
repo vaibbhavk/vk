@@ -1,8 +1,6 @@
 import Container from "@/components/Container";
 import ProjectCard from "@/components/ProjectCard";
-import { allProjectsQuery } from "@/lib/queries";
 import { urlForImage } from "@/lib/sanity";
-import { sanityClient } from "@/lib/sanity-server";
 import { getProjects } from "@/lib/sanity-utils";
 
 export const metadata = {

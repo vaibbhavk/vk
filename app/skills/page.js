@@ -1,8 +1,5 @@
 import Container from "@/components/Container";
 import SkillCard from "@/components/SkillCard";
-import { allSkillsQuery } from "@/lib/queries";
-import { urlForImage } from "@/lib/sanity";
-import { sanityClient } from "@/lib/sanity-server";
 import { getSkills } from "@/lib/sanity-utils";
 
 export const metadata = {
@@ -28,7 +25,6 @@ const Page = async () => {
             <SkillCard
               key={index}
               title={skill.title}
-              logo={urlForImage(skill.logo).url()}
               projects={skill.projects}
             />
           ))}

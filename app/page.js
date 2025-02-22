@@ -9,7 +9,7 @@ import {
   FaInstagram,
   FaFacebook,
 } from "react-icons/fa";
-import { SiFreelancer, SiFiverr, SiUpwork, SiGmail } from "react-icons/si";
+import { SiFiverr, SiUpwork, SiGmail } from "react-icons/si";
 import { MdLocationPin, MdOutlinePictureAsPdf } from "react-icons/md";
 import EducationCard from "../components/EducationCard";
 import ExperienceCard from "../components/ExperienceCard";
@@ -184,13 +184,6 @@ const Home = async () => {
               />
             </Link>
           </div>
-
-          {/* <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
-            GigPlaced
-          </h3>
-          <div className="group grid w-full grid-cols-1 gap-4 sm:grid-cols-1 items-start mb-16">
-            <BusinessCard />
-          </div> */}
 
           <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
             Education
