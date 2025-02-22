@@ -10,11 +10,10 @@ import {
   FaFacebook,
 } from "react-icons/fa";
 import { SiFreelancer, SiFiverr, SiUpwork, SiGmail } from "react-icons/si";
-import { MdLocationPin, MdOutlinePictureAsPdf, MdEmail } from "react-icons/md";
+import { MdLocationPin, MdOutlinePictureAsPdf } from "react-icons/md";
 import EducationCard from "../components/EducationCard";
 import ExperienceCard from "../components/ExperienceCard";
 import { getEducations, getExperiences } from "@/lib/sanity-utils";
-import BusinessCard from "@/components/BusinessCard";
 
 const Home = async () => {
   const educations = await getEducations();
@@ -30,16 +29,6 @@ const Home = async () => {
                 Vaibhav Kesharwani
               </h1>
 
-              {/* <div className="flex items-center mb-1">
-                <MdEmail
-                  size="1em"
-                  className="text-gray-600 dark:text-gray-400"
-                />
-
-                <p className="ml-1 text-gray-600 dark:text-gray-400 text-sm">
-                  vaibhav.vk2128@gmail.com
-                </p>
-              </div> */}
               <div className="flex items-center mb-4">
                 <MdLocationPin
                   size="1em"
@@ -51,11 +40,11 @@ const Home = async () => {
               </div>
 
               <p className="text-gray-600 dark:text-gray-400 mb-16">
-                Founder at DatStek | Data Scientist | Full Stack Developer |
-                Android Developer | Freelancer | Web, Graphics, and Motion
-                Designer
+                Technical Manager at Banrboard | 🎓 IIT Madras | 💻 Data
+                Scientist | Full Stack Web and Mobile App Developer | Freelancer
               </p>
             </div>
+
             <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
               <Image
                 alt="Vaibhav Kesharwani"
