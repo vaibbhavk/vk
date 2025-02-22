@@ -53,16 +53,11 @@ export default function Container({ children }) {
             <NavItem href="/" text="About" />
             <NavItem href="/skills" text="Skills" />
             <NavItem href="/projects" text="Projects" />
-            {/* <NavItem href="/services" text="Services" /> */}
             <NavItem
               href="https://drive.google.com/drive/folders/167F2LSfuEwrN3rEMzVGi2B8N2CV1Xt_Z?usp=sharing"
               target="_black"
               text="Resume"
             />
-
-            {/* <NavItem href="/certs" text="Certifications" /> */}
-            {/* <NavItem href="/honors" text="Honors & Awards" /> */}
-            {/* <NavItem href="/contact" text="Hire Me" /> */}
           </div>
         </nav>
       </div>
