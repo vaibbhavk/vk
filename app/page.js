@@ -169,18 +169,6 @@ const Home = async () => {
                 color="#6FDA44"
               />
             </a>
-            <a
-              href="https://www.freelancer.in/u/vaibbhavvk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mr-6"
-            >
-              <SiFreelancer
-                className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
-                size="2em"
-                color="#29B2FE"
-              />
-            </a>{" "}
           </div>
 
           <div className="flex items-center justify-center mt-3 mb-16 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6">

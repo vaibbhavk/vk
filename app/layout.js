@@ -5,15 +5,29 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title:
-    "VK – Technical Manager at Banrboard | Co-Founder at Bill Keeps | Data Scientist",
+    "VK – Technical Manager at Banrboard | Data Scientist | Full Stack Web and Mobile App Developer | Freelancer",
   description:
-    "Technical Manager at Banrboard | Co-Founder at Bill Keeps | Data Scientist",
+    "I offer services in Data Science, Project Management, and Full Stack Web & Mobile App Development. Let’s build something great together!",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <meta
+          property="og:title"
+          content="VK – Technical Manager at Banrboard | Data Scientist | Full Stack Web and Mobile App Developer | Freelancer"
+        />
+        <meta
+          property="og:description"
+          content="I offer services in Data Science, Project Management, and Full Stack Web & Mobile App Development. Let’s build something great together!"
+        />
+        <meta
+          property="og:image"
+          content="https://drive.google.com/uc?export=view&id=1P-LHsCzEM81fVm4V9lKWy2CU90p7KPPT"
+        />
+      </head>
+      <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );
 }
