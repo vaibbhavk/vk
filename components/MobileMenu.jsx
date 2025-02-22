@@ -2,19 +2,11 @@
 
 import cn from "classnames";
 import Link from "next/link";
-import useDelayedRender from "use-delayed-render";
 import { useState, useEffect } from "react";
 import styles from "@/app/mobile-menu.module.css";
 
 export default function MobileMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { mounted: isMenuMounted, rendered: isMenuRendered } = useDelayedRender(
-    isMenuOpen,
-    {
-      enterDelay: 20,
-      exitDelay: 300,
-    }
-  );
 
   function toggleMenu() {
     if (isMenuOpen) {
@@ -43,52 +35,50 @@ export default function MobileMenu() {
         <MenuIcon data-hide={isMenuOpen} />
         <CrossIcon data-hide={!isMenuOpen} />
       </button>
-      {isMenuMounted && (
-        <ul
-          className={cn(
-            styles.menu,
-            "flex flex-col absolute bg-gray-100 dark:bg-gray-900",
-            isMenuRendered && styles.menuRendered
-          )}
+      <ul
+        className={cn(
+          styles.menu,
+          "flex flex-col absolute bg-gray-100 dark:bg-gray-900",
+          isMenuOpen && styles.menuRendered
+        )}
+      >
+        <li
+          className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
+          style={{ transitionDelay: "150ms" }}
         >
-          <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
-            style={{ transitionDelay: "150ms" }}
+          <Link href="/" className="flex w-auto pb-4">
+            About
+          </Link>
+        </li>
+        <li
+          className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
+          style={{ transitionDelay: "175ms" }}
+        >
+          <Link href="/skills" className="flex w-auto pb-4">
+            Skills
+          </Link>
+        </li>
+        <li
+          className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
+          style={{ transitionDelay: "200ms" }}
+        >
+          <Link href="/projects" className="flex w-auto pb-4">
+            Projects
+          </Link>
+        </li>
+        <li
+          className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
+          style={{ transitionDelay: "250ms" }}
+        >
+          <Link
+            href="https://drive.google.com/drive/folders/167F2LSfuEwrN3rEMzVGi2B8N2CV1Xt_Z?usp=sharing"
+            className="flex w-auto pb-4"
+            target="_blank"
           >
-            <Link href="/" className="flex w-auto pb-4">
-              About
-            </Link>
-          </li>
-          <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
-            style={{ transitionDelay: "175ms" }}
-          >
-            <Link href="/skills" className="flex w-auto pb-4">
-              Skills
-            </Link>
-          </li>
-          <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
-            style={{ transitionDelay: "200ms" }}
-          >
-            <Link href="/projects" className="flex w-auto pb-4">
-              Projects
-            </Link>
-          </li>
-          <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
-            style={{ transitionDelay: "250ms" }}
-          >
-            <Link
-              href="https://drive.google.com/drive/folders/167F2LSfuEwrN3rEMzVGi2B8N2CV1Xt_Z?usp=sharing"
-              className="flex w-auto pb-4"
-              target="_blank"
-            >
-              Resume
-            </Link>
-          </li>
-        </ul>
-      )}
+            Resume
+          </Link>
+        </li>
+      </ul>
     </>
   );
 }
