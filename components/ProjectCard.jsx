@@ -1,5 +1,3 @@
-"use client";
-
 import cn from "classnames";
 import Image from "next/image";
 import { HiCode, HiDocumentText, HiExternalLink } from "react-icons/hi";
@@ -15,7 +13,13 @@ export default function ProjectCard({
   gradient,
 }) {
   return (
-    <div className={cn("", "rounded-lg bg-gradient-to-r p-1 mt-4 w-full", gradient)}>
+    <div
+      className={cn(
+        "",
+        "rounded-lg bg-gradient-to-r p-1 mt-4 w-full",
+        gradient
+      )}
+    >
       <div className="w-full h-full bg-white rounded-lg p-4">
         {logo && (
           <div className="relative w-full h-[230px] hidden sm:block">

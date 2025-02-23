@@ -1,5 +1,3 @@
-"use client"
-
 import Link from "next/link";
 
 const ExternalLink = ({ href, children }) => (
@@ -39,13 +37,19 @@ export default function Footer() {
           </Link>
         </div>
         <div className="flex flex-col space-y-4">
-          <ExternalLink href="https://www.linkedin.com/in/vaibhav-kesharwani-5b8137111/">
+          <ExternalLink href="https://www.linkedin.com/in/vaibhav-kesharwani">
             Linkedin
           </ExternalLink>
           <ExternalLink href="https://github.com/vaibbhavk">
             GitHub
           </ExternalLink>
-          <ExternalLink href="https://drive.google.com/file/d/1tnIbMBPrvJI1TN23x6Gkc_iQzcZ5W89y/view?usp=sharing">
+          <ExternalLink href="https://kaggle.com/vaibhavk2128">
+            Kaggle
+          </ExternalLink>
+          <ExternalLink href="https://leetcode.com/u/vaibbhavk">
+            LeetCode
+          </ExternalLink>
+          <ExternalLink href="https://drive.google.com/drive/folders/167F2LSfuEwrN3rEMzVGi2B8N2CV1Xt_Z?usp=sharing">
             Resume
           </ExternalLink>
         </div>
@@ -56,36 +60,7 @@ export default function Footer() {
           <ExternalLink href="https://www.upwork.com/freelancers/~01e98ab6fa7c516372">
             Upwork
           </ExternalLink>
-          <ExternalLink href="https://www.freelancer.in/u/vaibbhavvk">
-            Freelancer
-          </ExternalLink>
         </div>
-        {/* <div className="flex flex-col space-y-4">
-          <Link
-            href="/uses"
-            className="text-gray-500 hover:text-gray-600 transition"
-          >
-            Uses
-          </Link>
-          <Link
-            href="/guestbook"
-            className="text-gray-500 hover:text-gray-600 transition"
-          >
-            Guestbook
-          </Link>
-          <Link
-            href="/snippets"
-            className="text-gray-500 hover:text-gray-600 transition"
-          >
-            Snippets
-          </Link>
-          <Link
-            href="/tweets"
-            className="text-gray-500 hover:text-gray-600 transition"
-          >
-            Tweets
-          </Link>
-        </div> */}
       </div>
     </footer>
   );

@@ -1,5 +1,3 @@
-"use client";
-
 import { MdLocationPin } from "react-icons/md";
 
 export default function EducationCard({ name, college, location, date }) {

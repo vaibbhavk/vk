@@ -71,27 +71,27 @@ const Home = async () => {
               <img
                 src="/datstek.png"
                 alt="datstek"
-                className="h-[2em] w-[2em]"
+                className="h-[3em] w-[3em]"
               />
             </a>
             <a href="mailto:vaibhav.vk2128@gmail.com">
               <SiGmail
                 className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
-                size="2em"
+                size="3em"
                 color="#FD2606"
               />
             </a>
           </div>
-          <div className="flex mt-3">
+          <div className="flex mt-4">
             <a
-              href="https://www.linkedin.com/in/vaibhav-kesharwani/"
+              href="https://www.linkedin.com/in/vaibhav-kesharwani"
               target="_blank"
               rel="noopener noreferrer"
               className="mr-6"
             >
               <FaLinkedinIn
                 className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
-                size="2em"
+                size="3em"
                 color="#0A66C2"
               />
             </a>
@@ -103,7 +103,7 @@ const Home = async () => {
             >
               <FaGithub
                 className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
-                size="2em"
+                size="3em"
                 color="#181717"
               />
             </a>
@@ -115,36 +115,36 @@ const Home = async () => {
             >
               <FaWhatsapp
                 className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
-                size="2em"
+                size="3em"
                 color="#25D366"
               />
             </a>{" "}
             <a
-              href="https://www.instagram.com/vaibbhavk/"
+              href="https://www.instagram.com/vaibbhavk"
               target="_blank"
               rel="noopener noreferrer"
               className="mr-6"
             >
               <FaInstagram
                 className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
-                size="2em"
+                size="3em"
                 color="#E4405F"
               />
             </a>
             <a
-              href="https://www.facebook.com/vaibhav.vk28/"
+              href="https://www.facebook.com/vaibhav.vk28"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaFacebook
                 className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
-                size="2em"
+                size="3em"
                 color="#1877F2"
               />
             </a>
           </div>
 
-          <div className="flex mt-3">
+          <div className="flex mt-4">
             <a
               href="https://www.fiverr.com/vaibbhavvk?public_mode=true"
               target="_blank"
@@ -153,7 +153,7 @@ const Home = async () => {
             >
               <SiFiverr
                 className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
-                size="2em"
+                size="3em"
                 color="#1DBF73"
               />
             </a>
@@ -165,13 +165,13 @@ const Home = async () => {
             >
               <SiUpwork
                 className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
-                size="2em"
+                size="3em"
                 color="#6FDA44"
               />
             </a>
           </div>
 
-          <div className="flex items-center justify-center mt-3 mb-16 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6">
+          <div className="flex items-center justify-center mt-4 mb-16 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6">
             <p className="text-sm">Resume</p>
             <Link
               href="https://drive.google.com/drive/folders/167F2LSfuEwrN3rEMzVGi2B8N2CV1Xt_Z?usp=sharing"
@@ -179,7 +179,7 @@ const Home = async () => {
               rel="noopener noreferrer"
             >
               <MdOutlinePictureAsPdf
-                size="2em"
+                size="3em"
                 className="ml-1 transition ease-in-out hover:-translate-y-1 hover:scale-110"
               />
             </Link>
