@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title:
-    "VK – Technical Manager at Banrboard | Data Scientist | Full Stack Web and Mobile App Developer | Freelancer",
+    "Vaibhav Kesharwani – Technical Manager at Banrboard | Data Scientist | Full Stack Web and Mobile App Developer | Freelancer",
   description:
     "I offer services in Data Science, Project Management, and Full Stack Web & Mobile App Development. Let’s build something great together!",
 };
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta
           property="og:title"
-          content="VK – Technical Manager at Banrboard | Data Scientist | Full Stack Web and Mobile App Developer | Freelancer"
+          content="Vaibhav Kesharwani – Technical Manager at Banrboard | Data Scientist | Full Stack Web and Mobile App Developer | Freelancer"
         />
         <meta
           property="og:description"
