@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +28,10 @@ export default function RootLayout({ children }) {
           content="https://drive.google.com/uc?export=view&id=1P-LHsCzEM81fVm4V9lKWy2CU90p7KPPT"
         />
       </head>
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${inter.className} antialiased`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
