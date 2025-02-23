@@ -61,12 +61,12 @@ const Home = async () => {
           <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
             Links
           </h3>
-          <div className="flex">
+          <div className="flex mt-4 flex-wrap gap-6">
             <a
               href="https://datstek.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition ease-in-out hover:-translate-y-1 hover:scale-110 mr-6"
+              className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
             >
               <img
                 src="/datstek.png"
@@ -82,12 +82,11 @@ const Home = async () => {
               />
             </a>
           </div>
-          <div className="flex mt-4">
+          <div className="flex mt-4 flex-wrap gap-6">
             <a
               href="https://www.linkedin.com/in/vaibhav-kesharwani"
               target="_blank"
               rel="noopener noreferrer"
-              className="mr-6"
             >
               <FaLinkedinIn
                 className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
@@ -99,7 +98,6 @@ const Home = async () => {
               href="https://github.com/vaibbhavk"
               target="_blank"
               rel="noopener noreferrer"
-              className="mr-6"
             >
               <FaGithub
                 className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
@@ -111,7 +109,6 @@ const Home = async () => {
               href="https://wa.me/8770911462"
               target="_blank"
               rel="noopener noreferrer"
-              className="mr-6"
             >
               <FaWhatsapp
                 className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
@@ -123,7 +120,6 @@ const Home = async () => {
               href="https://www.instagram.com/vaibbhavk"
               target="_blank"
               rel="noopener noreferrer"
-              className="mr-6"
             >
               <FaInstagram
                 className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
@@ -144,12 +140,11 @@ const Home = async () => {
             </a>
           </div>
 
-          <div className="flex mt-4">
+          <div className="flex mt-4 flex-wrap gap-6">
             <a
               href="https://www.fiverr.com/vaibbhavvk?public_mode=true"
               target="_blank"
               rel="noopener noreferrer"
-              className="mr-6"
             >
               <SiFiverr
                 className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
@@ -161,7 +156,6 @@ const Home = async () => {
               href="https://www.upwork.com/freelancers/~01e98ab6fa7c516372"
               target="_blank"
               rel="noopener noreferrer"
-              className="mr-6"
             >
               <SiUpwork
                 className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
