@@ -40,8 +40,8 @@ const Home = async () => {
               </div>
 
               <p className="text-gray-600 dark:text-gray-400 mb-16">
-                Technical Manager at Banrboard | 🎓 IIT Madras | 💻 Data
-                Scientist | Full Stack Web and Mobile App Developer | Freelancer
+                Banrboard | 🎓 IIT Madras | 💻 Data Scientist | Full Stack Web and Mobile
+                App Developer | Freelancer
               </p>
             </div>
 
