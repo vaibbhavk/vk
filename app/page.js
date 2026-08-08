@@ -65,7 +65,7 @@ const Home = async () => {
             </div>
           </div>
 
-          <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
+          <h3 className="font-bold text-xl md:text-3xl tracking-tight mb-6 text-black dark:text-white">
             Experience
           </h3>
           <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-1 items-start  mb-16">
@@ -82,7 +82,7 @@ const Home = async () => {
               />
             ))}
           </div>
-          <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
+          <h3 className="font-bold text-xl md:text-3xl tracking-tight mb-6 text-black dark:text-white">
             Education
           </h3>
           <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 items-start mb-16">
@@ -97,7 +97,7 @@ const Home = async () => {
             ))}
           </div>
 
-          <h3 className="font-bold text-2xl md:text-4xl mb-6 tracking-tight text-black dark:text-white">
+          <h3 className="font-bold text-xl md:text-3xl mb-6 tracking-tight text-black dark:text-white">
             Connect
           </h3>
           <p className="text-gray-600 dark:text-gray-400 mb-2">
