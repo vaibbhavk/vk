@@ -25,9 +25,13 @@ const Home = async () => {
         <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
           <div className="flex flex-col-reverse sm:flex-row items-start">
             <div className="flex flex-col pr-8">
-              <h1 className="font-bold text-2xl md:text-4xl tracking-tight mb-1 text-black dark:text-white">
+              <h3 className="font-bold text-xl md:text-3xl tracking-tight mb-1 text-black dark:text-white">
                 Vaibhav Kesharwani
-              </h1>
+              </h3>
+
+              <p className="text-gray-600 dark:text-gray-400 mb-4">
+                Machine Learning Engineer & Full-Stack Developer
+              </p>
 
               <div className="flex items-center mb-4">
                 <MdLocationPin
@@ -35,150 +39,49 @@ const Home = async () => {
                   className="text-gray-600 dark:text-gray-400"
                 />
                 <p className="ml-1 text-gray-600 dark:text-gray-400 text-sm">
-                  Chennai, Tamil Nadu, India
+                  Mumbai, Maharashtra, India
                 </p>
               </div>
 
-              <p className="text-gray-600 dark:text-gray-400 mb-16">
-                Banrboard | 🎓 IIT Madras | 💻 Data Scientist | Full Stack Web and Mobile
-                App Developer | Freelancer
+              <p className="text-gray-600 dark:text-gray-400 mb-4">
+                I am a Software Engineer and Data Science practitioner trained
+                at IIT Madras. Currently, I work as an Assistant Manager (IT) at
+                Union Bank of India, where I focus on building machine learning
+                solutions and scalable analytics pipelines.
               </p>
-            </div>
 
-            <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
-              <Image
-                alt="Vaibhav Kesharwani"
-                height={176}
-                width={176}
-                src="/dp.jpg"
-                sizes="30vw"
-                priority
-                className="rounded-full filter"
-              />
+              <p className="text-gray-600 dark:text-gray-400 mb-4">
+                Over the past few years, I have worked across enterprise data
+                engineering on the Cloudera Data Platform, founded a software
+                agency, and delivered production-grade full-stack apps for 30+
+                clients worldwide.
+              </p>
+
+              <p className="text-gray-600 dark:text-gray-400 mb-16">
+                Outside of engineering, I maintain a strong discipline around
+                athletic wellness as a regular badminton player, prioritize
+                clean living, and am an avid reader.
+              </p>
             </div>
           </div>
 
           <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
-            Links
+            Experience
           </h3>
-          <div className="flex mt-4 flex-wrap gap-6">
-            <a
-              href="https://datstek.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
-            >
-              <img
-                src="/datstek.png"
-                alt="datstek"
-                className="h-[3em] w-[3em]"
+          <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-1 items-start  mb-16">
+            {experiences.map((e, index) => (
+              <ExperienceCard
+                key={index}
+                name={e.name}
+                company={e.company}
+                type={e.type}
+                location={e.location}
+                done={e.done}
+                date={e.date}
+                tech={e.tech}
               />
-            </a>
-            <a href="mailto:vaibhav.vk2128@gmail.com">
-              <SiGmail
-                className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
-                size="3em"
-                color="#FD2606"
-              />
-            </a>
+            ))}
           </div>
-          <div className="flex mt-4 flex-wrap gap-6">
-            <a
-              href="https://www.linkedin.com/in/vaibhav-kesharwani"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedinIn
-                className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
-                size="3em"
-                color="#0A66C2"
-              />
-            </a>
-            <a
-              href="https://github.com/vaibbhavk"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub
-                className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
-                size="3em"
-                color="#181717"
-              />
-            </a>
-            <a
-              href="https://wa.me/8770911462"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaWhatsapp
-                className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
-                size="3em"
-                color="#25D366"
-              />
-            </a>{" "}
-            <a
-              href="https://www.instagram.com/vaibbhavk"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram
-                className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
-                size="3em"
-                color="#E4405F"
-              />
-            </a>
-            <a
-              href="https://www.facebook.com/vaibhav.vk28"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebook
-                className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
-                size="3em"
-                color="#1877F2"
-              />
-            </a>
-          </div>
-
-          <div className="flex mt-4 flex-wrap gap-6">
-            <a
-              href="https://www.fiverr.com/vaibbhavvk?public_mode=true"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <SiFiverr
-                className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
-                size="3em"
-                color="#1DBF73"
-              />
-            </a>
-            <a
-              href="https://www.upwork.com/freelancers/~01e98ab6fa7c516372"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <SiUpwork
-                className="transition ease-in-out hover:-translate-y-1 hover:scale-110"
-                size="3em"
-                color="#6FDA44"
-              />
-            </a>
-          </div>
-
-          <div className="flex items-center justify-center mt-4 mb-16 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6">
-            <p className="text-sm">Resume</p>
-            <Link
-              href="https://drive.google.com/drive/folders/167F2LSfuEwrN3rEMzVGi2B8N2CV1Xt_Z?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <MdOutlinePictureAsPdf
-                size="3em"
-                className="ml-1 transition ease-in-out hover:-translate-y-1 hover:scale-110"
-              />
-            </Link>
-          </div>
-
           <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
             Education
           </h3>
@@ -194,25 +97,99 @@ const Home = async () => {
             ))}
           </div>
 
-          <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
-            Experience
+          <h3 className="font-bold text-2xl md:text-4xl mb-6 tracking-tight text-black dark:text-white">
+            Connect
           </h3>
-          <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-1 items-start">
-            {experiences.map((e, index) => (
-              <ExperienceCard
-                key={index}
-                name={e.name}
-                company={e.company}
-                type={e.type}
-                location={e.location}
-                done={e.done}
-                date={e.date}
-                tech={e.tech}
-              />
-            ))}
+          <p className="text-gray-600 dark:text-gray-400 mb-2">
+            Feel free to reach out for collaborations, consulting, or technical
+            advisory:
+          </p>
+
+          <div className="flex mt-4 flex-wrap gap-6">
+            <a
+              href="mailto:vaibhav.vk2128@gmail.com"
+              className="transition ease-in-out hover:-translate-y-1 hover:scale-110 underline underline-offset-4"
+            >
+              Gmail
+            </a>
+            <a
+              href="https://www.linkedin.com/in/vaibhav-kesharwani"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition ease-in-out hover:-translate-y-1 hover:scale-110 underline underline-offset-4"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/vaibbhavk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition ease-in-out hover:-translate-y-1 hover:scale-110 underline underline-offset-4"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://leetcode.com/u/vaibbhavk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition ease-in-out hover:-translate-y-1 hover:scale-110 underline underline-offset-4"
+            >
+              LeetCode
+            </a>
+            <a
+              href="https://www.kaggle.com/vaibhavk2128"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition ease-in-out hover:-translate-y-1 hover:scale-110 underline underline-offset-4 hidden md:inline-block"
+            >
+              Kaggle
+            </a>
+
+            <a
+              href="https://www.fiverr.com/vaibbhavvk?public_mode=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition ease-in-out hover:-translate-y-1 hover:scale-110 underline underline-offset-4 hidden md:inline-block"
+            >
+              Fiverr
+            </a>
+            <a
+              href="https://www.upwork.com/freelancers/~01e98ab6fa7c516372"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition ease-in-out hover:-translate-y-1 hover:scale-110 underline underline-offset-4 hidden md:inline-block"
+            >
+              Upwork
+            </a>
+          </div>
+
+          <div className="flex mt-4 mb-16 flex-wrap gap-6 md:hidden">
+            <a
+              href="https://www.kaggle.com/vaibhavk2128"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition ease-in-out hover:-translate-y-1 hover:scale-110 underline underline-offset-4"
+            >
+              Kaggle
+            </a>
+            <a
+              href="https://www.fiverr.com/vaibbhavvk?public_mode=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition ease-in-out hover:-translate-y-1 hover:scale-110 underline underline-offset-4"
+            >
+              Fiverr
+            </a>
+            <a
+              href="https://www.upwork.com/freelancers/~01e98ab6fa7c516372"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition ease-in-out hover:-translate-y-1 hover:scale-110 underline underline-offset-4"
+            >
+              Upwork
+            </a>
           </div>
         </div>
-        <span className="h-16" />
       </Container>
     </Suspense>
   );
