@@ -17,11 +17,11 @@ export default function RootLayout({ children }) {
       <head>
         <meta
           property="og:title"
-          content="Vaibhav Kesharwani – Data Scientist | Full Stack Web and Mobile App Developer | Freelancer"
+          content="Vaibhav Kesharwani"
         />
         <meta
           property="og:description"
-          content="I offer services in Data Science, Project Management, and Full Stack Web & Mobile App Development. Let’s build something great together!"
+          content="Machine Learning Engineer and Full-Stack Developer"
         />
         <meta
           property="og:image"
