@@ -53,7 +53,7 @@ const Home = async () => {
               <p className="text-gray-600 dark:text-gray-400 mb-4">
                 Over the past few years, I have worked across enterprise data
                 engineering on the Cloudera Data Platform, founded a software
-                agency, and delivered production-grade full-stack apps for 30+
+                agency, and delivered production-grade full-stack apps for 20+
                 clients worldwide.
               </p>
 
